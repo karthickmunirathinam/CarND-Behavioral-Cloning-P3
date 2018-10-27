@@ -96,7 +96,6 @@ if __name__ == "__main__":
     model.add(Dense(10))
     model.add(Dense(1))
     model.summary()
-    # plot_model(model, show_shapes=True, to_file='./examples/model_vis.png')
 
     model.compile(optimizer='adam', loss='mse')
     model.fit_generator(train_generator, steps_per_epoch=len(train_samples),
